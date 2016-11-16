@@ -20,7 +20,10 @@ messages from UCI Machine Learning repository gathered in 2012 which contains:
 * 450 SMS non-spam messages from Caroline Tag's PhD Thesis.
 * 1002 SMS non-spam and 322 spam messages from SMS Spam Corpus v.0.1 Big.
 
-Each line of dataset is formated as follow:
+Downloaded from [SMS Spam Collection Data Set from UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection).
+
+
+Each line of dataset is formatted as follow:
 * label of the message
 * text message string
 
@@ -35,8 +38,24 @@ The established email filtering algorithms are not efficient for SMS since:
 The extraction and analysis of the data is done with Python.
 
 The machine learning algorithms tested are:
-* naive Bayes
-* SVM
+* Naive Bayes Algorithm
+* Support Vector Machine (SVM) Algorithm
+* k-Nearest Neighbor Algorithm
 * ...
+
+
+#### Data Extraction
+
+For each text message:
+
+1. split into tokens of alphabetic characters.
+2. any space ( ), comma (,), dot (.), or any special characters are removed from feature space for now.
+3. alphabetic strings are stored as a token as long as they do not have any non-alphabetic characters in between. 
+4. the effect of abbreviations and misspellings in the messages are ignored.
+5. no word stemming algorithm is used.
+6. an additional token is generated with the number of dollar signs ($).
+7. an additional token is generated with the number of numeric strings.
+8. an additional token is generated with the overall number of character in the message.
+
 
 
