@@ -48,14 +48,22 @@ The machine learning algorithms tested are:
 
 For each text message:
 
-1. split into tokens of alphabetic characters.
-2. any space ( ), comma (,), dot (.), or any special characters are removed from feature space for now.
-3. alphabetic strings are stored as a token as long as they do not have any non-alphabetic characters in between. 
-4. the effect of abbreviations and misspellings in the messages are ignored.
-5. no word stemming algorithm is used.
-6. an additional token is generated with the number of dollar signs ($).
-7. an additional token is generated with the number of numeric strings.
-8. an additional token is generated with the overall number of character in the message.
+1. count the overall number of characters.
+2. count the number of dollars.
+3. count the number of numeric characters.
+4. [TODO] count the number of words in uppercase.
+5. remove space ( ), comma (,), dot (.), or any special characters.
+6. [TODO] convert all words into lowercase.
+7. split into tokens of alphabetic characters.
+8. add a token at the begining with the number of characters.
+9. add a token at the 2nd place with the number of dollars.
+10. add a token at the 3rd place with the number of numeric characters.
+11. [TODO] add a token at the 4th place with the number of words in uppercase.
 
+There some problems with very special characters, need to fix that.
 
+It might be great to seek the root of a word (e.g., walk, walks, walked, walking have the root walk in common).
 
+#### Machine Learning Algorithms
+
+An association algorithm can be established to distinguish two sets: a ham set and a spam set.
