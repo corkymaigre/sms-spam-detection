@@ -51,18 +51,21 @@ For each text message:
 1. count the overall number of characters.
 2. count the number of dollars.
 3. count the number of numeric characters.
-4. [TODO] count the number of words in uppercase.
+4. count the number of words in uppercase.
 5. remove space ( ), comma (,), dot (.), or any special characters.
-6. [TODO] convert all words into lowercase.
+6. convert all words into lowercase.
 7. split into tokens of alphabetic characters.
 8. add a token at the begining with the number of characters.
 9. add a token at the 2nd place with the number of dollars.
 10. add a token at the 3rd place with the number of numeric characters.
-11. [TODO] add a token at the 4th place with the number of words in uppercase.
+11. add a token at the 4th place with the number of words in uppercase.
 
-There some problems with very special characters, need to fix that.
+There are some problems with very special characters, need to fix that.
 
-It might be great to seek the root of a word (e.g., walk, walks, walked, walking have the root walk in common).
+It might be great to seek the root of a word (e.g., walk, walks, walked, walking have the root 'walk' in common).
+See NLTK for more information.
+
+
 
 #### Machine Learning Algorithms
 
