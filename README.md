@@ -60,11 +60,16 @@ For each text message:
 10. add a token at the 3rd place with the number of numeric characters.
 11. add a token at the 4th place with the number of words in uppercase.
 
-There are some problems with very special characters, need to fix that.
+There are some problems with very special characters (utf-8), need to fix that!
 
-
+Need to divide sms into two datasets (ham set and spam set).
+Then need to find the most popular words (10) and the worst popular words (10) in these two sets.
+Then use an association algorithm with these 40 words to find out if they're important.
+Then add them under @attribute field in the arff file for Weka.
 
 
 #### Machine Learning Algorithms
 
-An association algorithm can be established to distinguish two sets: a ham set and a spam set.
+
+
+
