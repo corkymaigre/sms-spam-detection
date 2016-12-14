@@ -51,10 +51,10 @@ For each text message:
 1. count the overall number of characters.
 2. count the number of dollars.
 3. count the number of numeric characters.
-4. count the number of words in uppercase.
-5. remove space ( ), comma (,), dot (.), or any special characters.
-6. convert all words into lowercase.
-7. split into tokens of alphabetic characters.
+4. remove space ( ), comma (,), dot (.), or any special characters.
+5. split into tokens of alphabetic characters.
+6. count the number of words in uppercase.
+7. convert all tokens into lowercase and find the word root.
 8. add a token at the begining with the number of characters.
 9. add a token at the 2nd place with the number of dollars.
 10. add a token at the 3rd place with the number of numeric characters.
@@ -62,8 +62,6 @@ For each text message:
 
 There are some problems with very special characters, need to fix that.
 
-It might be great to seek the root of a word (e.g., walk, walks, walked, walking have the root 'walk' in common).
-See NLTK for more information.
 
 
 
